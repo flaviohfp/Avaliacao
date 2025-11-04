@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -38,7 +37,6 @@ header {
     color: rgb(255, 0, 0);
 }
 
-
 .banner {
     display: flex;
     justify-content: center;
@@ -55,7 +53,6 @@ header {
     font-size: 28px;
     color: beige;
 }
-
 
 main a {
     padding: 10px;
@@ -74,7 +71,6 @@ main a:hover {
     background-color: rgb(120, 140, 170);
 }
 
-
 .sobre {
     background-color: rgb(50, 66, 87);
     text-align: center;
@@ -90,10 +86,9 @@ main a:hover {
     font-size: 20px;
 }
 
-
 .produtos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 20px;
     padding: 20px;
 }
@@ -119,7 +114,6 @@ main a:hover {
     height: 200px;
     border-radius: 10px;
 }
-
 
 form {
     display: flex;
@@ -159,7 +153,6 @@ button:hover {
     background-color: rgb(120, 140, 170);
 }
 
-
 footer {
     background-color: rgb(50, 66, 87);
     color: black;
@@ -171,7 +164,8 @@ footer {
     left: 0;
 }
 
-/* ===== RESPONSIVO ===== */
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -189,5 +183,23 @@ footer {
 
     .sobre {
         width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .produtos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .produto img {
+        width: 100%;
+        height: auto;
     }
 }
